@@ -1,0 +1,69 @@
+html,body {
+	height: 100%;
+}
+
+.content {
+	height: 100%;
+}
+
+#sidebar {
+	height: 100%;
+	background-color: #9b59b6;
+}
+
+#main {
+	height: 100%;
+	background-color: #ecf0f1;
+}
+
+.sidebar {
+    position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 60%;
+	margin: auto;
+}
+
+.profile-picture {
+	height: 100px;
+	width: 100px;
+	background-image: url('img/chris.jpg');
+	background-size: 100px 100px;
+	border-radius: 100px;
+	margin: auto;
+}
+
+.name {
+	padding-top: 20px;
+	margin: auto;
+	text-align: center;
+	font-family: 'Roboto Slab', serif;
+	font-size: 24px;
+	color: white;
+}
+
+.links {
+	padding-top: 20px;
+	margin: auto;
+	text-align: center;
+}
+
+.fa {
+	color: white;
+	padding-left: 5px;
+}
+
+.email {
+	padding-top: 20px;
+	color: white;
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+}
+
+.row .tiles {
+	height: 33.33%;
+}
+
+.tile {
+	height: 100%;
+}
