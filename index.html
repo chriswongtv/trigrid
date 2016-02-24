@@ -10,7 +10,10 @@
 	<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="jquery.cover.css">
 	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab|Lato' rel='stylesheet' type='text/css'>
+	<script src="jquery.cover.js"></script>
+	<script src="chris.js"></script>
 </head>
 <body>
 	<div class="row content">
@@ -32,26 +35,197 @@
 	  </div>
 	  <div id="main" class="col-md-9">
 	  	<div class="row tiles">
-	  		<a href="http://blog.chriswong.tv/treehacks"><div class="col-md-3 col-sm-4 col-xs-6 tile" style="background-image: url('img/latest-blog.jpg');"></div></a>
-	  		<a href="#" data-toggle="modal" data-target="#clowModal"><div class="col-md-3 col-sm-4 col-xs-6 tile" style="background-image: url('img/clow.png');"></div></a>
-	  		<div class="col-md-3 col-sm-4 col-xs-6 tile" style="background-image: url('img/aerosearch.png');"></div>
-	  		<div class="col-md-3 col-sm-4 col-xs-6 tile" style="background-image: url('img/coffeetime.png');"></div>
-
-	  		<div class="col-md-3 col-sm-4 col-xs-6 tile" style="background-image: url('img/cogifire.png');"></div>
-	  		<div class="col-md-3 col-sm-4 col-xs-6 tile" style="background-image: url('img/ihelpboard.png');"></div>
-	  		<div class="col-md-3 col-sm-4 col-xs-6 tile" style="background-image: url('img/grandwatch.png');"></div>
-	  		<div class="col-md-3 col-sm-4 col-xs-6 tile" style="background-image: url('img/madeinmalaysia.png');"></div>
-
-	  		<div class="col-md-3 col-sm-4 col-xs-6 tile" style="background-image: url('img/node-all-path.png');"></div>
-	  		<div class="col-md-3 col-sm-4 col-xs-6 tile" style="background-image: url('img/technoheadphone.png');"></div>
-	  		<div class="col-md-3 col-sm-4 col-xs-6 tile" style="background-image: url('img/blog.png');"></div>
-	  		<div class="col-md-3 col-sm-4 col-xs-6 tile" style="background-image: url('img/resume.jpg');"></div>
+	  		<!-- Latest Blog Tile -->
+	  		<div class="col-md-3 col-sm-4 col-xs-6 tile">
+	  			<div class="hovereffect">
+			        <img class="img-responsive tileImg" src="img/latest-blog.jpg" alt="">
+		            <a href="http://blog.chriswong.tv/treehacks">
+		            	<div class="overlay">
+			                <h2>Latest Blog</h2>
+							<p> 
+								TreeHacks
+							</p> 
+			            </div>
+			        </a>
+			    </div>
+	  		</div>
+	  		<!-- Clow Tile -->
+	  		<div class="col-md-3 col-sm-4 col-xs-6 tile">
+	  			<div class="hovereffect">
+			        <img class="img-responsive tileImg" src="img/clow.png" alt="">
+		            <a href="#" data-toggle="modal" data-target="#clowModal">
+		            	<div class="overlay">
+			                <h2>Clow</h2>
+							<p> 
+								TreeHacks 2016<br>Best Big Data Hack
+							</p> 
+			            </div>
+			        </a>
+			    </div>
+	  		</div>
+	  		<!-- AeroSearch Tile -->
+	  		<div class="col-md-3 col-sm-4 col-xs-6 tile">
+	  			<div class="hovereffect">
+			        <img class="img-responsive tileImg" src="img/aerosearch.png" alt="">
+		            <a href="#">
+		            	<div class="overlay">
+			                <h2>AeroSearch</h2>
+							<p> 
+								Emirates Travel Hackathon Winner
+							</p> 
+			            </div>
+			        </a>
+			    </div>
+	  		</div>
+	  		<!-- CoffeeTime Tile -->
+	  		<div class="col-md-3 col-sm-4 col-xs-6 tile">
+	  			<div class="hovereffect">
+			        <img class="img-responsive tileImg" src="img/coffeetime.png" alt="">
+		            <a href="#" data-toggle="modal" data-target="#coffeetimeModal">
+		            	<div class="overlay">
+			                <h2>CoffeeTime</h2>
+							<p> 
+								Nearby Coffee Locator for Pebble Smartwatch
+							</p> 
+			            </div>
+			        </a>
+			    </div>
+	  		</div>
+	  		<!-- Cogifire Tile -->
+	  		<div class="col-md-3 col-sm-4 col-xs-6 tile">
+	  			<div class="hovereffect">
+			        <img class="img-responsive tileImg" src="img/cogifire.png" alt="">
+		            <a href="#" data-toggle="modal" data-target="#cogifireModal">
+		            	<div class="overlay">
+			                <h2>Cogifire</h2>
+							<p> 
+								Web Development & Services
+							</p> 
+			            </div>
+			        </a>
+			    </div>
+	  		</div>
+	  		<!-- iHelpBoard Tile -->
+	  		<div class="col-md-3 col-sm-4 col-xs-6 tile">
+	  			<div class="hovereffect">
+			        <img class="img-responsive tileImg" src="img/ihelpboard.png" alt="">
+		            <a href="#" data-toggle="modal" data-target="#ihelpboardModal">
+		            	<div class="overlay">
+			                <h2>iHelpBoard</h2>
+							<p> 
+								Apple News, Tutorials and Tips
+							</p> 
+			            </div>
+			        </a>
+			    </div>
+	  		</div>
+	  		<!-- GrandWatch Tile -->
+	  		<div class="col-md-3 col-sm-4 col-xs-6 tile">
+	  			<div class="hovereffect">
+			        <img class="img-responsive tileImg" src="img/grandwatch.png" alt="">
+		            <a href="#" data-toggle="modal" data-target="#grandwatchModal">
+		            	<div class="overlay">
+			                <h2>GrandWatch</h2>
+							<p> 
+								Opportunity Hack 2015 Project
+							</p> 
+			            </div>
+			        </a>
+			    </div>
+	  		</div>
+	  		<!-- Made In Malaysia Tile -->
+	  		<div class="col-md-3 col-sm-4 col-xs-6 tile">
+	  			<div class="hovereffect">
+			        <img class="img-responsive tileImg" src="img/madeinmalaysia.png" alt="">
+		            <a href="#" data-toggle="modal" data-target="#madeinmalaysiaModal">
+		            	<div class="overlay">
+			                <h2>Made In Malaysia</h2>
+							<p> 
+								Curation of Malaysian-Made Mobile Apps
+							</p> 
+			            </div>
+			        </a>
+			    </div>
+	  		</div>
+	  		<!-- node-all-path Tile -->
+	  		<div class="col-md-3 col-sm-4 col-xs-6 tile">
+	  			<div class="hovereffect">
+			        <img class="img-responsive tileImg" src="img/node-all-path.png" alt="">
+		            <a href="#" data-toggle="modal" data-target="#nodeallpathModal">
+		            	<div class="overlay">
+			                <h2>node-all-path</h2>
+							<p> 
+								NPM Module For Finding Paths In A Graph
+							</p> 
+			            </div>
+			        </a>
+			    </div>
+	  		</div>
+	  		<!-- TechnoHeadphone Tile -->
+	  		<div class="col-md-3 col-sm-4 col-xs-6 tile">
+	  			<div class="hovereffect">
+			        <img class="img-responsive tileImg" src="img/technoheadphone.png" alt="">
+		            <a href="#" data-toggle="modal" data-target="#technoheadphoneModal">
+		            	<div class="overlay">
+			                <h2>TechnoHeadphone</h2>
+							<p> 
+								Audio Gear Reviews & News Website
+							</p> 
+			            </div>
+			        </a>
+			    </div>
+	  		</div>
+	  		<!-- Blog Tile -->
+	  		<div class="col-md-3 col-sm-4 col-xs-6 tile">
+	  			<div class="hovereffect">
+			        <img class="img-responsive tileImg" src="img/blog.png" alt="">
+		            <a href="http://blog.chriswong.tv">
+		            	<div class="overlay">
+			                <h2>Blog</h2>
+							<p> 
+								My Blog
+							</p> 
+			            </div>
+			        </a>
+			    </div>
+	  		</div>
+	  		<!-- Resume Tile -->
+	  		<div class="col-md-3 col-sm-4 col-xs-6 tile">
+	  			<div class="hovereffect">
+			        <img class="img-responsive tileImg" src="img/resume.jpg" alt="">
+		            <a href="#">
+		            	<div class="overlay">
+			                <h2>Resume</h2>
+							<p> 
+								My Latest Resume
+							</p> 
+			            </div>
+			        </a>
+			    </div>
+	  		</div>
 	  	</div>
 	  </div>
 	</div>
 
 	<!-- Clow Modal -->
 	<div class="modal fade" id="clowModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <div class="modal-logo">
+	        	<img src="img/clow-logo.png">
+	        </div>
+	      </div>
+	      <div class="modal-body">
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<!-- End Clow Modal -->
+
+	<!-- Clow Modal -->
+	<div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 	  <div class="modal-dialog" role="document">
 	    <div class="modal-content">
 	      <div class="modal-header">
