@@ -67,7 +67,7 @@
 	  		<div class="col-md-3 col-sm-4 col-xs-6 tile">
 	  			<div class="hovereffect">
 			        <img class="img-responsive tileImg" src="img/aerosearch.png" alt="">
-		            <a href="#">
+		            <a href="#" data-toggle="modal" data-target="#aerosearchModal">
 		            	<div class="overlay">
 			                <h2>AeroSearch</h2>
 							<p> 
@@ -218,30 +218,159 @@
 	        </div>
 	      </div>
 	      <div class="modal-body">
+	      	<div class="row">
+	      		<div class="col-md-6">
+	      			<img src="img/latest-blog.jpg" style="width:100%;border-radius:10px;opacity:0.9;">
+	      		</div>
+	      		<div class="col-md-6">
+	      			<p><b>Clow</b> is a clinic-facing app that uses emotion analysis and machine learning to predict patients’ illnesses. To the patient, Clow acts as an electronic clinic check-in system for them to sign in before their session; during the sign-in process, Clow will capture an image of the patient’s face and will run it through an emotion analysis algorithm and generate a set of “scores” across multiple categories, including fear, sadness and happiness. After that, Dr. Clow – our machine learning service – will predict the patient’s illness using its predictive analysis algorithm, which is trained and improved by modeling the actual diagnosis result and the patient’s emotion “scores”.</p>
+	      			<p>The idea of Clow was conceived and materialized during TreeHacks 2016 – Stanford University's national hackathon – and it was awarded TreeHacks Health's "Best Big Data Hack" award.</p>
+	      			<br><p>Learn more about Clow's journey here <a href="http://blog.chriswong.tv/treehacks"><i class="fa fa-arrow-right"></i></a></p>
+	      		</div>
+	      	</div>
 	      </div>
 	    </div>
 	  </div>
 	</div>
 	<!-- End Clow Modal -->
 
-	<!-- Clow Modal -->
-	<div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<!-- AeroSearch Modal -->
+	<div class="modal fade" id="aerosearchModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 	  <div class="modal-dialog" role="document">
 	    <div class="modal-content">
 	      <div class="modal-header">
 	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-	        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+	        <div class="modal-logo">
+	        	<img src="img/aerosearch-logo.png">
+	        </div>
 	      </div>
 	      <div class="modal-body">
-	        ...
-	      </div>
-	      <div class="modal-footer">
-	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-	        <button type="button" class="btn btn-primary">Save changes</button>
+	      	<div class="row">
+	      		<div class="col-md-6">
+	      			<img src="img/aerosearch-team.jpg" style="width:100%;border-radius:10px;opacity:0.9;">
+	      		</div>
+	      		<div class="col-md-6">
+	      			<p><b>AeroSearch</b> is a browser extension that allows users to reverse lookup any image on the Internet, suggests the location, and displays a calendar with prices to the said destination, which the user can seamlessly continue to book their flight.</p>
+	      			<p>In order to make the process as smooth as possible, we broke the project down into two parts – a Chrome extension and a Node.js server running on Amazon AWS. After installing the extension on Google Chrome, the user has the option of using AeroSearch when right-clicking any images on the web. The image will then be sent to our web server to conduct a reverse lookup, and Google Maps API is used to locate the user's and the destination's closest airport.</p>
+	      			<p>This project was put together at Emirates Travel Hackathon held at San Francisco, where AeroSearch was specifically picked by Cricking – a sponsor at the hackathon – to be awarded.</p>
+	      			<br><p>Watch AeroSearch's video walkthrough here <a href="https://youtu.be/yC_5T5ajSeI"><i class="fa fa-arrow-right"></i></a></p>
+	      		</div>
+	      	</div>
 	      </div>
 	    </div>
 	  </div>
 	</div>
-	<!-- End Clow Modal -->
+	<!-- End AeroSearch Modal -->
+
+	<!-- CoffeeTime Modal -->
+	<div class="modal fade" id="coffeetimeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <div class="modal-logo">
+	        	<img src="img/coffeetime-logo.png">
+	        </div>
+	      </div>
+	      <div class="modal-body">
+	      	<div class="row">
+	      		<div class="col-md-6">
+	      			<img src="img/coffeetime-demo.png" style="width:100%;border-radius:10px;opacity:0.9;">
+	      		</div>
+	      		<div class="col-md-6">
+	      			<p><b>CoffeeTime</b> is a coffee store locator for Pebble smartwatches.</p>
+	      			<p>All you have to do is to launch CoffeeTime, and you will see a list of nearby coffee shops along with its distance (This process could take up to 5 seconds as your phone's GPS pinpoints your location). Click into it and you can see the store's address so you know which direction to go!</p>
+	      			<p>I originally created CoffeeTime as a way to learn Pebble app development, and had no intention of publishing to the Pebble App Store. However, after polishing the app and set-up a web server for the API calls, I decided to release it to the public.</p>
+	      			<br><p>Download CoffeeTime for Pebble here <a href="https://apps.getpebble.com/en_US/application/568a18e4142c4fc07d000030"><i class="fa fa-arrow-right"></i></a></p>
+	      		</div>
+	      	</div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<!-- End CoffeeTime Modal -->
+
+	<!-- Cogifire Modal -->
+	<div class="modal fade" id="cogifireModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <div class="modal-logo">
+	        	<img src="img/cogifire-logo.png">
+	        </div>
+	      </div>
+	      <div class="modal-body">
+	      	<div class="row">
+	      		<div class="col-md-6">
+	      			<img src="img/cogifire-promospot.png" style="width:100%;border-radius:10px;opacity:0.9;">
+	      		</div>
+	      		<div class="col-md-6">
+	      			<p><b>Cogifire</b> is a web development and services company.</p>
+	      			<p>I founded Cogifire in 2010 under the name 'Vuze Tech' as a holding company for all my web projects. Soon after I became a freelance web developer, Cogifire expanded to offer professional web development and various services – including SEO marketing, advertising, and technology consultancy – to a number of corporations and organizations.</p>
+	      			<p>I also have a number of experimental projects under Cogifire's name. Promospot (pictured), a website that curates discounts and promotions at retail stores, is one of them.</p>
+	      			<br><p>Visit Cogifire's website here <a href="http://www.cogifire.com"><i class="fa fa-arrow-right"></i></a></p>
+	      		</div>
+	      	</div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<!-- End Cogifire Modal -->
+
+	<!-- iHelpBoard Modal -->
+	<div class="modal fade" id="ihelpboardModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <div class="modal-logo">
+	        	<img src="img/ihelpboard-logo.png">
+	        </div>
+	      </div>
+	      <div class="modal-body">
+	      	<div class="row">
+	      		<div class="col-md-6">
+	      			<img src="img/ihelpboard-demo.png" style="width:100%;border-radius:10px;opacity:0.9;">
+	      		</div>
+	      		<div class="col-md-6">
+	      			<p><b>iHelpBoard</b> is a website dedicated to all things Apple. </p>
+	      			<p>I originally founded iHelpBoard with the intention of providing Apple users and fans a place to request assistance through the net, get access to a number of useful tutorials which enhances their user experience, as well as discussions over Apple-related topics. Within a year of founding iHelpBoard, I have personally assisted over 1,000 queries on and off our Facebook page, solving the majority of them.</p>
+	      			<p>I developed the website on a LAMP stack, promoted the website through social media marketing and SEO, and further improved web traffic and user experience by analyzing data from Google Analytics.</p>
+	      			<br><p>Visit iHelpBoard here <a href="http://www.ihelpboard.com"><i class="fa fa-arrow-right"></i></a></p>
+	      		</div>
+	      	</div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<!-- End iHelpBoard Modal -->
+
+	<!-- Made In Malaysia Modal -->
+	<div class="modal fade" id="madeinmalaysiaModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <div class="modal-logo">
+	        	<img src="img/madeinmalaysia-logo.png">
+	        </div>
+	      </div>
+	      <div class="modal-body">
+	      	<div class="row">
+	      		<div class="col-md-6">
+	      			<img src="img/madeinmalaysia.png" style="width:100%;border-radius:10px;opacity:0.9;">
+	      		</div>
+	      		<div class="col-md-6">
+	      			<p><b>Made In Malaysia</b> is a website that curates mobile apps made by Malaysians for the Malaysian market. The primary goal is to raise awareness about the Malaysian technology scene and to showcase their creations to a wider audience.</p>
+	      			
+	      			<br><p>Visit Made In Malaysia here <a href="http://www.madeinmalaysia.me"><i class="fa fa-arrow-right"></i></a></p>
+	      		</div>
+	      	</div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<!-- End Made In Malaysia Modal -->
 </body>
 </html>
