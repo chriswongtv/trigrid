@@ -1,5 +1,11 @@
 html,body {
 	height: 100%;
+	background-color: #ecf0f1;
+}
+
+html, body, h1, h2{
+	margin: 0;
+	font: inherit;
 }
 
 .content {
@@ -11,11 +17,14 @@ html,body {
 #sidebar {
 	height: 100%;
 	background-color: #9b59b6;
+	position: relative;
+  	top: 0;
 }
 
 #main {
 	height: 100%;
 	background-color: #ecf0f1;
+	padding: 0px !important;
 }
 
 .sidebar {
@@ -29,7 +38,7 @@ html,body {
 .profile-picture {
 	height: 100px;
 	width: 100px;
-	background-image: url('img/chris.jpg');
+	background-image: url('../img/chris.jpg');
 	background-size: 100px 100px;
 	border-radius: 100px;
 	margin: auto;
@@ -62,8 +71,114 @@ html,body {
 	font-family: 'Lato', sans-serif;
 }
 
-.row .tiles {
-	height: 33.33%;
+#selection-bar {
+	height: 7%;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	background-color: rgba(52, 152, 219, 1.0);
+	padding: 0px !important;
+	color: white;
+	font-family: 'Roboto Slab', serif;
+}
+
+#selection-bar a {
+	color: white;
+	word-spacing: 30px;
+	text-decoration: none;
+}
+
+#about-section {
+	background-color: #58ACE3;
+	color: white;
+	font-family: 'Lato', sans-serif;
+}
+
+#about-section p {
+	padding-top: 5%;
+	padding-bottom: 5%;
+	padding-left: 5%;
+	padding-right: 5%;
+	font-size: 18px;
+	font-family: 'Roboto Slab', serif;
+	line-height: 1.5;
+}
+
+#about {
+	height: 31%;
+}
+
+#cd-timeline {
+	margin-top: -10px !important;
+	margin-bottom: 0 !important;
+	padding-left: 5% !important;
+	padding-right: 5% !important;
+}
+
+.cd-timeline-content p {
+	font-family: 'Lato', sans-serif;
+}
+
+span.tab-space {
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+#about-footer {
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 5%;
+	padding: 1.6em;
+	width: 45%;
+	position: relative;
+	background: white;
+	border-radius: 0.25em;
+	box-shadow: 0 3px 0 #d7e4ed;
+	-webkit-font-smoothing: antialiased;
+	box-sizing: border-box;
+	display: block;
+}
+
+#about-footer h2 {
+	text-align: center;
+	font-size: 1.25rem;
+	color: #303e49;
+	font-family: 'Lato', sans-serif;
+	font-weight: bold;
+}
+
+#about-footer .top-btn {
+	width: 100%;
+	text-align: center;
+}
+
+#about-footer button {
+	background-color: rgba(52, 152, 219, 1.0);
+	font-size: 16px;
+}
+
+#about-footer p {
+	font-size: 1rem;
+	margin: 1em 0;
+	line-height: 1.6;
+	font-family: 'Lato', sans-serif;
+}
+
+#about-footer i {
+	color: white;
+	text-align: center;
+	width: 100%;
+	padding-left: 0 !important;
+}
+
+#about-footer span {
+	font-family: 'Lato', sans-serif;
+}
+
+#project {
+	height: 31%;
+	margin-left: 0px !important;
+	margin-right: 0px !important;
 }
 
 .tile {
@@ -76,6 +191,13 @@ html,body {
 @media (max-width: 768px) {
 	.col-xs-6 {
 		height: 75% !important;
+	}
+}
+
+@media( max-width: 1169px) {
+	#about-footer {
+		width: 93% !important;
+		margin-left: 2%;
 	}
 }
 
