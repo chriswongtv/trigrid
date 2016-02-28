@@ -8,6 +8,9 @@ function showProject() {
 		$("#project").show();
 		document.getElementById("project-label").style.fontWeight = "bold";
 		document.getElementById("about-label").style.fontWeight = "normal";
+		$('html, body').animate({
+	    	scrollTop: 0
+	    }, 300);
 	});
 }
 
@@ -53,8 +56,9 @@ jQuery(function(){
 	}
 
 	$('.go-to-top-btn').click(function(event) {
-	event.preventDefault();
-        $('html, body').animate({
-        	scrollTop: 0}, 300);
+		event.preventDefault();
+	    $('html, body').animate({
+	    	scrollTop: 0
+	    }, 300);
     })
 });

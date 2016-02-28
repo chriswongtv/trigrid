@@ -157,6 +157,11 @@ span.tab-space {
 	font-size: 16px;
 }
 
+#about-footer .footer-btn {
+	background-color: rgba(52, 152, 219, 1.0);
+	font-size: 16px;
+}
+
 #about-footer p {
 	font-size: 1rem;
 	margin: 1em 0;
@@ -173,6 +178,7 @@ span.tab-space {
 
 #about-footer span {
 	font-family: 'Lato', sans-serif;
+	font-weight: bold;
 }
 
 #project {
