@@ -119,6 +119,14 @@ html, body, h1, h2{
 	font-family: 'Lato', sans-serif;
 }
 
+.cd-timeline-content a {
+	text-decoration: none;
+}
+
+.cd-timeline-content i {
+	color: #337ab7;
+}
+
 span.tab-space {
 	padding-left: 1em;
 	padding-right: 1em;
@@ -220,7 +228,14 @@ span.tab-space {
 	border-radius: 0;
 	background-color:rgba(255, 255, 255, 0.9);
 	color: white;
+	font-size: 16px;
 	font-family: 'Lato', sans-serif;
+	line-height: 1.5;
+}
+
+.modal-content a {
+	text-decoration: none;
+	color: white;
 }
 
 .modal-header {
@@ -241,6 +256,10 @@ span.tab-space {
 	margin-bottom: 2em;
 	max-height: 5em;
 	max-width: 100%;
+}
+
+.close {
+	font-size: 30px;
 }
 
 #clowModal .modal-content {
@@ -264,8 +283,20 @@ span.tab-space {
 	background-color: rgba(241, 151, 153, 0.9);
 }
 
+#grandwatchModal .modal-content {
+	background-color: rgba(178, 219, 191, 0.9);
+}
+
 #madeinmalaysiaModal .modal-content {
 	background-color: rgba(250, 93, 90, 0.9);
+}
+
+#nodeallpathsModal .modal-content {
+	background-color: rgba(203, 56, 55, 0.9);
+}
+
+#technoheadphoneModal .modal-content {
+	background-color: rgba(41, 128, 185, 0.9);
 }
 
 .hovereffect {
