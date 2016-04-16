@@ -271,6 +271,10 @@ span.tab-space {
 	background-color: rgba(52, 152, 219, 0.9);
 }
 
+#joyfeedModal .modal-content {
+	background-color: rgba(133, 208, 122, 0.9);
+}
+
 #coffeetimeModal .modal-content {
 	background-color: rgba(166, 123, 91, 0.9);
 }

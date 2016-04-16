@@ -17,6 +17,17 @@
 	<script src="js/modernizr.js"></script>
 	<script src="js/timeline.js"></script>
 	<script src="js/chris.js"></script>
+
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-23062542-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
 </head>
 <body>
 	<div class="row content">
@@ -365,6 +376,19 @@
 									<span class="cd-date">February 2016</span>
 								</div>
 							</div>
+
+							<!-- Timeline Block -->
+							<div class="cd-timeline-block">
+								<div class="cd-timeline-img cd-hackathon">
+									<img src="img/hackathon.svg" alt="Picture">
+								</div>
+
+								<div class="cd-timeline-content">
+									<h2>Awarded the "Most Innovative Cognitive Computing Solution" by HPE at AngelHack SF 2016</h2>
+									<p>Built "JoyFeed", a browser extension that analyzes human emotions using machine learning and filters negative posts on unhappy users' social feed based on its sentimental value.<br><br><a href="#" data-toggle="modal" data-target="#joyfeedModal">Learn more about JoyFeed<i class="fa fa-arrow-right"></i></a></p>
+									<span class="cd-date">April 2016</span>
+								</div>
+							</div>
 						</section>
 
 						<!-- Final Block -->
@@ -423,15 +447,15 @@
 								</a>
 							</div>
 						</div>
-						<!-- CoffeeTime Tile -->
+						<!-- JoyFeed Tile -->
 						<div class="col-md-3 col-sm-4 col-xs-6 tile">
 							<div class="hovereffect">
-								<img class="img-responsive tileImg" src="img/coffeetime.png" alt="">
-								<a href="#" data-toggle="modal" data-target="#coffeetimeModal">
+								<img class="img-responsive tileImg" src="img/joyfeed.png" alt="">
+								<a href="#" data-toggle="modal" data-target="#joyfeedModal">
 									<div class="overlay">
-										<h2>CoffeeTime</h2>
+										<h2>JoyFeed</h2>
 										<p> 
-											Nearby Coffee Locator for Pebble Smartwatch
+											HPE Challenge Winner at AngelHack SF 2016
 										</p> 
 									</div>
 								</a>
@@ -479,8 +503,22 @@
 								</a>
 							</div>
 						</div>
-						<!-- GrandWatch Tile -->
+						<!-- CoffeeTime Tile -->
 						<div class="col-md-3 col-sm-4 col-xs-6 tile">
+							<div class="hovereffect">
+								<img class="img-responsive tileImg" src="img/coffeetime.png" alt="">
+								<a href="#" data-toggle="modal" data-target="#coffeetimeModal">
+									<div class="overlay">
+										<h2>CoffeeTime</h2>
+										<p> 
+											Nearby Coffee Locator for Pebble Smartwatch
+										</p> 
+									</div>
+								</a>
+							</div>
+						</div>
+						<!-- GrandWatch Tile -->
+						<!-- <div class="col-md-3 col-sm-4 col-xs-6 tile">
 							<div class="hovereffect">
 								<img class="img-responsive tileImg" src="img/grandwatch.png" alt="">
 								<a href="#" data-toggle="modal" data-target="#grandwatchModal">
@@ -492,7 +530,7 @@
 									</div>
 								</a>
 							</div>
-						</div>
+						</div> -->
 						<!-- node-all-path Tile -->
 						<div class="col-md-3 col-sm-4 col-xs-6 tile">
 							<div class="hovereffect">
@@ -607,6 +645,33 @@
 				</div>
 			</div>
 			<!-- End AeroSearch Modal -->
+
+			<!-- JoyFeed Modal -->
+			<div class="modal fade" id="joyfeedModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							<div class="modal-logo">
+								<img src="img/joyfeed-logo.png">
+							</div>
+						</div>
+						<div class="modal-body">
+							<div class="row">
+								<div class="col-md-6">
+									<img src="img/joyfeed-team.jpg" style="width:100%;border-radius:10px;opacity:0.9;">
+								</div>
+								<div class="col-md-6">
+									<p><b>JoyFeed</b> is a browser extension that analyzes human emotions using machine learning and filters negative posts on unhappy users' social feed based on its sentimental value.</p>
+									<p>It was built at AngelHack San Francisco 2016 using HPE Haven OnDemand's APIs and won HPE's challenge prize.</p>
+									<br><p><a href="https://www.youtube.com/watch?v=mjUFgaZFhOE">Watch JoyFeed's video walkthrough here <i class="fa fa-arrow-right"></i></a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End JoyFeed Modal -->
 
 			<!-- CoffeeTime Modal -->
 			<div class="modal fade" id="coffeetimeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
