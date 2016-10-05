@@ -4,8 +4,8 @@ jQuery(function(){
 
 function showProject() {
 	jQuery(function(){
-		$("#about").hide();
-		$("#project").show();
+		$("#about").hide("slide");
+		$("#project").show("slide", { "direction":"right" });
 		document.getElementById("project-label").style.fontWeight = "bold";
 		document.getElementById("about-label").style.fontWeight = "normal";
 		$('html, body').animate({
@@ -16,14 +16,19 @@ function showProject() {
 
 function showAbout() {
 	jQuery(function(){
-		$("#project").hide();
-		$("#about").show();
+		$("#project").hide("slide", { "direction": "right" });
+		$("#about").show("slide", { "direction": "left" });
 		document.getElementById("about-label").style.fontWeight = "bold";
 		document.getElementById("project-label").style.fontWeight = "normal";
 	});
 }
 
-showAbout();
+jQuery(function(){
+	$("#project").hide();
+	$("#about").show();
+	document.getElementById("about-label").style.fontWeight = "bold";
+	document.getElementById("project-label").style.fontWeight = "normal";
+});
 
 jQuery(function(){
 	if ($(window).width() >= 992) {

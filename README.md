@@ -1,2 +1,2 @@
-# chriswong-tv
-My personal website
+# Trigrid - HTML Personal Website Template
+Trigrid is a project-first HTML template built for personal websites. It was originally built for [my personal website](http://www.chriswong.tv) to showcase my portfolio and life journey.
